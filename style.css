@@ -1,0 +1,108 @@
+.wrapper {
+  margin: 0px;
+}
+.global_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(221, 20, 20);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.parent {
+  gap: 2px;
+  width: 100%;
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+
+  grid-template-areas: "banner offer1" "banner offer2" "l product1" "recent product1" "tag product1" "fotter fotter";
+}
+.parent > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  grid-area: banner;
+  height: 20vh;
+  /* background: radial-gradient(red blue); */
+  background: radial-gradient(red, purple);
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.offer1 {
+  grid-area: offer1;
+  background: brown;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.offer2 {
+  grid-area: offer2;
+  background: purple;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.l {
+  grid-area: l;
+  background: skyblue;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.recent {
+  grid-area: recent;
+  background: purple;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.tag {
+  grid-area: tag;
+  background: orangered;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.product1 {
+  height: 30vh;
+  grid-area: product1;
+  background: radial-gradient(blue, purple);
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.fotter {
+  grid-area: fotter;
+  background: black;
+  height: 5vh;
+  color: white;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
