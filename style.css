@@ -106,3 +106,25 @@
   justify-content: center;
   align-items: center; */
 }
+@media (max-width: 992px) {
+  .parent {
+    gap: 2px;
+    width: 100%;
+    display: grid;
+    /* justify-content: center;
+        align-items: center; */
+
+    grid-template-areas: "banner banner" "banner banner" "offer1 offer2" "l l" "recent tag" "product1 product1" "fotter fotter";
+  }
+}
+@media (max-width: 550px) {
+  .parent {
+    gap: 2px;
+    width: 100%;
+    display: grid;
+    /* justify-content: center;
+        align-items: center; */
+
+    grid-template-areas: "banner " "offer1" "offer2" "l" "recent" "tag " "product1" "fotter";
+  }
+}
